@@ -1,0 +1,8 @@
+- hosts: all
+  become: yes
+  tasks:
+     - name: install web server
+       package: 
+         name: httpd
+         state: installed
+ 
